@@ -30,7 +30,7 @@ script:
 
 before_deploy:
   - npm install -g vsce
-  - vsce package
+  - vsce package -o vscode-mysql-${TRAVIS_TAG}.vsix
 
 deploy:
   provider: releases
